@@ -111,17 +111,6 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
         Adaptador miadaptador = new Adaptador(getApplicationContext(),Lista);
         listaArgollas.setAdapter(miadaptador);
 

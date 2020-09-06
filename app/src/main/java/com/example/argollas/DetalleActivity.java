@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.muddzdev.styleabletoast.StyleableToast;
 
 public class DetalleActivity extends AppCompatActivity {
 
@@ -19,6 +22,7 @@ public class DetalleActivity extends AppCompatActivity {
         foto = findViewById(R.id.imgDetalle);
         sku = findViewById(R.id.txtsku);
 
+        StyleableToast.makeText(this, "El peso promedio en cada argolla es equivalente al #9", Toast.LENGTH_LONG, R.style.mytoast).show();
         Datos obj = (Datos) getIntent().getExtras().getSerializable("objeto");
 
         sku.setText(obj.getSku());
